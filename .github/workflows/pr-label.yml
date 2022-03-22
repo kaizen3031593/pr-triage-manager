@@ -1,9 +1,11 @@
 name: "Set PR Label"
 on:
   pull_request:
-    types: [opened, edited]
-  pull_request_target:
-    type: [opened, edited]
+    types:
+      - edited
+      - opened
+      - synchronize
+      - reopened
 
 jobs:
   pr-triage-manager:
