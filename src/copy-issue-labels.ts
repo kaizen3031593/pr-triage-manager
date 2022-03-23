@@ -120,7 +120,7 @@ export class PullRequestLabelManager {
     function issuesClosed(regex: RegExp): string[] {
       return Array.from(text.matchAll(regex))
         .filter((m) => GITHUB_CLOSE_ISSUE_KEYWORDS.includes(m[1].toLowerCase()))
-        .map((m) => m[2]);
+        .map((m) => m[2]); 
     }
   }
 
